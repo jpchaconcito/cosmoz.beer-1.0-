@@ -1,6 +1,6 @@
 function createStar() {
     const container = document.getElementById("sistLupular")
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 600; i++) {
         const star = document.createElement("div");
         star.className = "star";
 
@@ -8,7 +8,7 @@ function createStar() {
         star.style.width = size + "px";
         star.style.height = size + "px";
 
-        let tm = Math.random() * 5 + 1;
+        let tm = Math.random() * 7 + 1;
         let randomColor = Math.floor(Math.random() * 16777215).toString(16);
         star.style.backgroundColor = `#${randomColor}`;
         star.style.boxShadow = `0 0 ${tm * 4}px 1px #${randomColor}`;
